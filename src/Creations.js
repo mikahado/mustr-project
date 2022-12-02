@@ -35,7 +35,7 @@ const Creations = () => {
                         <th scope="col">Title</th>
                         <th scope="col"># of Authors</th>
                         <th scope="col">Type</th>
-                        <th scope="col">Read</th>
+                        <th scope="col"></th>
                     </tr>
                 </thead>
                 <tbody>
