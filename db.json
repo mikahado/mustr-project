@@ -1,0 +1,87 @@
+{
+  "creations": [
+    {
+      "id": 1,
+      "title": "The Ancient Mortal",
+      "type": "Poem",
+      "authors": 2,
+      "text": {
+        "line": "test with Phil"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Do You Know Mushroom Man?",
+      "type": "Short Story",
+      "authors": 3,
+      "text": "Bbbb"
+    },
+    {
+      "id": 3,
+      "title": "The Godmother",
+      "type": "Film",
+      "authors": 2,
+      "text": "Cccc"
+    },
+    {
+      "id": 4,
+      "title": "Karawane",
+      "type": "Poem",
+      "authors": 2,
+      "text": ""
+    },
+    {
+      "id": 5,
+      "title": "Crimson Wall",
+      "type": "Short Story",
+      "authors": 2,
+      "text": ""
+    },
+    {
+      "id": 6,
+      "title": "Lockdown Cycle",
+      "type": "Film",
+      "authors": 1,
+      "text": ""
+    },
+    {
+      "id": 7,
+      "title": "Pieces of War",
+      "type": "Novel",
+      "authors": 2,
+      "text": ""
+    },
+    {
+      "id": 8,
+      "title": "Selfish Jean",
+      "type": "Film",
+      "authors": 2,
+      "text": "Selfish Jean"
+    },
+    {
+      "id": 9,
+      "title": "The Lottery",
+      "type": "Short Story",
+      "authors": 4,
+      "text": "The Lottery"
+    },
+    {
+      "id": 10,
+      "title": "DBL PNDLM",
+      "type": "Poem",
+      "authors": 3,
+      "text": "DBL PNDLM"
+    },
+    {
+      "title": "",
+      "type": "",
+      "authors": 0,
+      "text": [
+        {
+          "line": ""
+        }
+      ],
+      "id": 11
+    }
+  ]
+}
