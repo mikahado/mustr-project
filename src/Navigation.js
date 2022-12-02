@@ -34,6 +34,16 @@ function Navigation() {
       >
         New
       </NavLink>
+
+      <NavLink
+        to="/about"
+        exact
+        activeStyle={{
+          background: "black",
+        }}
+      >
+        About
+      </NavLink>
       
     </div>
   );
