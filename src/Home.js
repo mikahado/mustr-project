@@ -6,6 +6,7 @@ const Home = () => {
     return (
 
         <div className="App">
+            
             <h1>Exquisite Horse</h1>
             <img src={require("./img/exquisiteHorseLogo.png")} alt="A Very Exquisite Horse" height="200" />
             <h2>the collaborative creation app</h2>

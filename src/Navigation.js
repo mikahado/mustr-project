@@ -1,6 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+//This is where to link primary CSS for navbar
+
 function Navigation() {
   return (
     <div>
