@@ -88,7 +88,7 @@ const Create = () => {
       <Button variant="outlined" onClick={handleGetStartedClick}>Get Started</Button>
 
     {toggleCreate ? 
-      <ExquisiteHorse handleChange={handleChange} addNewLine={addNewLine} submitForm={handleSubmit} creationForm={creationForm} creationTitle={creationForm.title} /> 
+      <ExquisiteHorse handleChange={handleChange} submitForm={handleSubmit} creationForm={creationForm} creationTitle={creationForm.title} /> 
         : toggleCreate}
     
     </div>

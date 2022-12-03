@@ -6,19 +6,6 @@ const ExquisiteHorse = ({creationTitle, creationForm, handleChange, submitForm})
 
   const [text, setText] = useState("")
 
-  const handleLineChange = (e) => {
-    setText(e.target.value)
-  }
-
-  const handleNewLineSubmit = (e) => {
-      e.preventDefault()
-      // handleChange(text)
-  }
-  
-  const handleFinishClick = () => {
-    submitForm(text)
-  }
-
   return (
 
     <div>
@@ -47,13 +34,13 @@ const ExquisiteHorse = ({creationTitle, creationForm, handleChange, submitForm})
         
         <br/><br/>
 
-        <form onSubmit={handleNewLineSubmit} >
+        <form onSubmit={submitForm}>
           <input type="text" name="text" onChange={handleChange} value={creationForm.text} />
           <br/><br/>
-          <Button type="submit" name="text" variant="outlined">New Line</Button>
+          <button type="submit" >NewLine</button>
         </form>
 
-        <Button type="click" onClick={handleFinishClick} variant="fill">Finish</Button>
+        <Button type="click" variant="fill">Finish</Button>
           
         <br/><br/><br/><br/>
     </div>
