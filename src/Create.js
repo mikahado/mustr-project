@@ -13,6 +13,10 @@ const Create = () => {
         text: ""
     })
 
+    const [newLine, setNewLine] = useState({
+      line: ""
+  })
+
     console.log(creationForm)
 
     const handleChange = (e) => {
@@ -27,10 +31,10 @@ const Create = () => {
         e.preventDefault() 
 
         const newText = {
-        title: creationForm.title,
-        type: creationForm.type,
-        authors: creationForm.authors,
-        text: creationForm.text
+          title: creationForm.title,
+          type: creationForm.type,
+          authors: creationForm.authors,
+          text: creationForm.text
         }
 
         fetch("http://localhost:3000/creations", {
@@ -48,9 +52,8 @@ const Create = () => {
 
 
   const addNewLine = () => {
-
+  
   }
-
 
 
   return (
@@ -88,8 +91,10 @@ const Create = () => {
       <Button variant="outlined" onClick={handleGetStartedClick}>Get Started</Button>
 
     {toggleCreate ? 
-      <ExquisiteHorse handleChange={handleChange} submitForm={handleSubmit} creationForm={creationForm} creationTitle={creationForm.title} /> 
+      <ExquisiteHorse handleChange={handleChange} submitForm={handleSubmit} creationForm={creationForm} creationTitle={creationForm.title} creationText={creationForm.text} handleAddLine={addNewLine} /> 
         : toggleCreate}
+
+
     
     </div>
   )
