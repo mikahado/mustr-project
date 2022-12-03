@@ -2,13 +2,13 @@ import React from 'react'
 import ListItemIcon from '@mui/material/ListItemIcon';
 import LaunchRoundedIcon from '@mui/icons-material/LaunchRounded';
 
-const Creation = ({creation, setShowText}) => {
+const Creation = ({creation, setShowText, setShowDetails}) => {
 
 const {title, type, text, authors} = creation
 
 const handleClick = () => {
   console.log('hi')
-  setShowText(text)
+  setShowDetails(creation)
 }
  
   return (
