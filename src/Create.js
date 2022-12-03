@@ -29,10 +29,9 @@ const Create = () => {
     const addNewLine = (newLine) => {
         setCreationForm({
           ...creationForm,
-            poem: {
-              ...creationForm.poem,
-              newLine,
-            }
+            poem: [
+              newLine
+            ]
         });
       }
     
