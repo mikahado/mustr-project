@@ -10,12 +10,11 @@ const Create = () => {
         title: "",
         type: "",
         authors: 0,
-        text: ""
+        text: "",
+        poem: {
+            line: []
+          },
     })
-
-    const [newLine, setNewLine] = useState({
-      line: ""
-  })
 
     console.log(creationForm)
 
@@ -34,7 +33,8 @@ const Create = () => {
           title: creationForm.title,
           type: creationForm.type,
           authors: creationForm.authors,
-          text: creationForm.text
+          text: creationForm.text,
+          poem: creationForm.poem.line
         }
 
         fetch("http://localhost:3000/creations", {
@@ -50,11 +50,9 @@ const Create = () => {
     setToggleCreate(!toggleCreate)
   }
 
-
   const addNewLine = () => {
   
   }
-
 
   return (
 
@@ -94,8 +92,6 @@ const Create = () => {
       <ExquisiteHorse handleChange={handleChange} submitForm={handleSubmit} creationForm={creationForm} creationTitle={creationForm.title} creationText={creationForm.text} handleAddLine={addNewLine} /> 
         : toggleCreate}
 
-
-    
     </div>
   )
 }

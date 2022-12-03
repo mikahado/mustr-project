@@ -4,10 +4,9 @@ import LaunchRoundedIcon from '@mui/icons-material/LaunchRounded';
 
 const Creation = ({creation, setShowText, setShowDetails}) => {
 
-const {title, type, text, authors} = creation
+const {title, type, text, authors, poem} = creation
 
 const handleClick = () => {
-  console.log('hi')
   setShowDetails(creation)
 }
  

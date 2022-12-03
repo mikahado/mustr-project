@@ -4,9 +4,6 @@ import Button from '@mui/material/Button';
 
 const ExquisiteHorse = ({creationTitle, creationForm, handleChange, submitForm, creationText, handleAddLine}) => {
 
-  const handleClick = () => {
-
-  }
 
   return (
 
@@ -37,14 +34,13 @@ const ExquisiteHorse = ({creationTitle, creationForm, handleChange, submitForm, 
         <br/><br/>
 
         <form onSubmit={submitForm}>
-          <input type="text" name="text" maxlength="55" onChange={handleChange} value={creationForm.text} />
+          <input type="text" name="text" maxLength="55" onChange={handleChange} value={creationForm.text} />
           <br/><br/>
           <Button onClick={handleAddLine} variant="fill">Next Line</Button>
           <Button type="submit" variant="fill">Finish</Button>
         </form>
 
         
-          
         <br/><br/><br/><br/>
     </div>
   )

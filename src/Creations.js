@@ -16,7 +16,10 @@ const Creations = () => {
     const [showDetails, setShowDetails] = useState({
         title: "",
         authors: "",
-        text: ""
+        text: "",
+        poem: {
+            line: [],
+        }
     })
 
     console.log(showDetails)
@@ -67,6 +70,7 @@ const Creations = () => {
                     </Typography>
                     <Typography variant="body1">
                         {showDetails.text} 
+                         
                     <br />
                     </Typography>
                 </CardContent>
