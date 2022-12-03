@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Button from '@mui/material/Button';
 import ExquisiteHorse from './ExquisiteHorse';
-import { CreateOutlined } from '@mui/icons-material';
 
 const Create = () => {
 
@@ -11,9 +10,7 @@ const Create = () => {
         title: "",
         type: "",
         authors: 0,
-        text: {
-            line: ""
-        }
+        text: ""
     })
 
     const handleChange = (e) => {
@@ -41,12 +38,18 @@ const Create = () => {
         })
         // .then((r) => r.json())
         // .then()
-
   }
 
   const handleGetStartedClick = () => {
     setToggleCreate(!toggleCreate)
   }
+
+
+  const addNewLine = () => {
+
+  }
+
+
 
   return (
 
@@ -82,8 +85,9 @@ const Create = () => {
 
       <Button variant="outlined" onClick={handleGetStartedClick}>Get Started</Button>
 
-    {toggleCreate ? <ExquisiteHorse title={creationForm.title} creationForm={creationForm.text.line} setCreationForm={setCreationForm} /> : toggleCreate}
-
+    {toggleCreate ? 
+      <ExquisiteHorse handleChange={handleChange} addNewLine={addNewLine} submitForm={handleSubmit} title={creationForm.title} /> 
+        : toggleCreate}
     
     </div>
   )

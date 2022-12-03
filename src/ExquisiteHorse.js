@@ -2,25 +2,18 @@ import React, {useState} from 'react'
 import Create from './Create'
 import Button from '@mui/material/Button';
 
-const ExquisiteHorse = ({title, creationForm, setCreationForm}) => {
+const ExquisiteHorse = ({title, handleChange, submitForm}) => {
 
-  const [text, setText] = useState([])
-  const [newLine, setNewLine] = useState("")
+  const [text, setText] = useState("")
 
-  const handleAddNewLine = (e) => {
+
+  const handleNewLineSubmit = (e) => {
       e.preventDefault()
-      setText(...text, newLine)
-
-  }
-
-  const handleChange = (e) => {
-    console.log(e.target.value)
-    e.preventDefault()
-    setNewLine(e.target.value)
+      setText(e.target.value)
   }
   
-  const handleClick = () => {
-
+  const handleFinishClick = () => {
+    submitForm(text)
   }
 
   return (
@@ -42,8 +35,6 @@ const ExquisiteHorse = ({title, creationForm, setCreationForm}) => {
             Each collaborator will only be able to see the line written before them. 
             <br/><br/>
             <hr />
-  
-  
         </div>
       
         <br />
@@ -53,13 +44,13 @@ const ExquisiteHorse = ({title, creationForm, setCreationForm}) => {
         
         <br/><br/>
 
-        <form onSubmit={handleAddNewLine} >
-          <input type="text" name="poem" onChange={handleChange} value={newLine} />
+        <form onSubmit={handleNewLineSubmit} >
+          <input type="text" name="poem" onChange={handleChange} value={text} />
           <br/><br/>
           <Button type="submit" variant="outlined">New Line</Button>
         </form>
 
-        <Button type="click" onClick={handleClick} variant="outlined">Finish</Button>
+        <Button type="click" onClick={handleFinishClick} variant="fill">Finish</Button>
           
         <br/><br/><br/><br/>
     </div>
