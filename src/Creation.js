@@ -7,6 +7,7 @@ const Creation = ({creation, setShowText}) => {
 const {title, type, text, authors} = creation
 
 const handleClick = () => {
+  console.log('hi')
   setShowText(text)
 }
  
@@ -19,7 +20,7 @@ const handleClick = () => {
         <td>
           {/* <button onClick={handleClick} type="button" className="btn btn-primary"> */}
           <ListItemIcon>
-            <LaunchRoundedIcon onClick={handleClick} type="button"  />
+            <LaunchRoundedIcon type="button" onClick={handleClick}  />
           </ListItemIcon>
          
         </td>

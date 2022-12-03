@@ -5,16 +5,21 @@
       "title": "The Ancient Mortal",
       "type": "Poem",
       "authors": 2,
-      "text": {
-        "line": "test with Phil"
-      }
+      "text": [{
+          "line" : 1,
+          "lineText": "line 1 of poem"
+        },
+        {
+          "line" : 2,
+          "lineText": "line 2 of poem"
+      }]
     },
     {
       "id": 2,
       "title": "Do You Know Mushroom Man?",
       "type": "Short Story",
       "authors": 3,
-      "text": "Bbbb"
+      "text": "The morning of June 27th was clear and sunny, with the fresh warmth of a full-summer day; the flowers were blossoming profusely and the grass was richly green. The people of the village began to gather in the square, between the post office and the bank, around ten oclock; in some towns there were so many people that the lottery took two days and had to be started on June 26th, but in this village, where there were only about three hundred people, the whole lottery took only about two hours, so it could begin at ten oclock in the morning and still be through in time to allow the villagers to get home for noon dinner."
     },
     {
       "id": 3,
