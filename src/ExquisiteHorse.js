@@ -2,14 +2,17 @@ import React, {useState} from 'react'
 import Create from './Create'
 import Button from '@mui/material/Button';
 
-const ExquisiteHorse = ({title, handleChange, submitForm}) => {
+const ExquisiteHorse = ({creationTitle, creationForm, handleChange, submitForm}) => {
 
   const [text, setText] = useState("")
 
+  const handleLineChange = (e) => {
+    setText(e.target.value)
+  }
 
   const handleNewLineSubmit = (e) => {
       e.preventDefault()
-      setText(e.target.value)
+      // handleChange(text)
   }
   
   const handleFinishClick = () => {
@@ -39,15 +42,15 @@ const ExquisiteHorse = ({title, handleChange, submitForm}) => {
       
         <br />
 
-        <h2>{title}</h2>
+        <h2>{creationTitle}</h2>
         <h3>{text}</h3>
         
         <br/><br/>
 
         <form onSubmit={handleNewLineSubmit} >
-          <input type="text" name="poem" onChange={handleChange} value={text} />
+          <input type="text" name="text" onChange={handleChange} value={creationForm.text} />
           <br/><br/>
-          <Button type="submit" variant="outlined">New Line</Button>
+          <Button type="submit" name="text" variant="outlined">New Line</Button>
         </form>
 
         <Button type="click" onClick={handleFinishClick} variant="fill">Finish</Button>

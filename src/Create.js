@@ -13,11 +13,15 @@ const Create = () => {
         text: ""
     })
 
+    console.log(creationForm)
+
     const handleChange = (e) => {
         setCreationForm({
         ...creationForm, [e.target.name]: e.target.value
         })
     }
+
+    console.log(creationForm)
     
     function handleSubmit(e) {
         e.preventDefault() 
@@ -26,9 +30,7 @@ const Create = () => {
         title: creationForm.title,
         type: creationForm.type,
         authors: creationForm.authors,
-        text: {
-            line: creationForm.text.line,
-            }
+        text: creationForm.text
         }
 
         fetch("http://localhost:3000/creations", {
@@ -86,7 +88,7 @@ const Create = () => {
       <Button variant="outlined" onClick={handleGetStartedClick}>Get Started</Button>
 
     {toggleCreate ? 
-      <ExquisiteHorse handleChange={handleChange} addNewLine={addNewLine} submitForm={handleSubmit} title={creationForm.title} /> 
+      <ExquisiteHorse handleChange={handleChange} addNewLine={addNewLine} submitForm={handleSubmit} creationForm={creationForm} creationTitle={creationForm.title} /> 
         : toggleCreate}
     
     </div>
