@@ -2,11 +2,11 @@ import React, {useState} from 'react'
 import Create from './Create'
 import Button from '@mui/material/Button';
 
-const ExquisiteHorse = ({creationTitle, creationForm, handleChange, submitForm, creationText, handleAddLine}) => {
+const ExquisiteHorse = ({creationTitle, creationForm, handleChange, submitForm, creationLine, handleAddLine}) => {
 
   const [nextLine, setNextLine] = useState({
-    line: ""
-  })
+    line: ""}
+    )
 
   const handleLineChange = (e) => {
     setNextLine({
@@ -47,12 +47,12 @@ const ExquisiteHorse = ({creationTitle, creationForm, handleChange, submitForm, 
         <br />
 
         <h2>{creationTitle}</h2>
-        <h3>{creationText}</h3>
+        <h3>{creationLine}</h3>
         
         <br/><br/>
 
-        <form onSubmit={handleLineSubmit}>
-          <input type="text" name="line" maxLength="55" onChange={handleLineChange} value={nextLine.line} />
+        <form onSubmit={submitForm}>
+          <input type="text" name="line" maxLength="55" onChange={handleChange} value={creationLine} />
           <br/><br/>
           <Button type="submit" variant="fill">Next Line</Button>
         </form>

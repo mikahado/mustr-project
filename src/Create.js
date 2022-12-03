@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Button from '@mui/material/Button';
 import ExquisiteHorse from './ExquisiteHorse';
+import ExqHorseItem from './ExquisiteItem'
 
 const Create = () => {
 
@@ -11,12 +12,8 @@ const Create = () => {
         type: "",
         authors: 0,
         text: "",
-        poem: {
-            line: ""
-          },
+        line: ""
     })
-
-    console.log(creationForm)
 
     const handleChange = (e) => {
         setCreationForm({
@@ -24,17 +21,20 @@ const Create = () => {
         })
     }
 
-    console.log(creationForm)
-
     const addNewLine = (newLine) => {
         setCreationForm({
           ...creationForm,
-            poem: [
               newLine
-            ]
         });
       }
-    
+
+  console.log(creationForm)
+
+      const poemList = Object.values(creationForm).map(l => <ExqHorseItem poemLine={l} />)
+
+      console.log(poemList)
+
+  
     function handleSubmit(e) {
         e.preventDefault() 
 
@@ -43,9 +43,7 @@ const Create = () => {
           type: creationForm.type,
           authors: creationForm.authors,
           text: creationForm.text,
-          poem: {
-            line: creationForm.poem.line
-          }
+          line: creationForm.line
         }
 
         fetch("http://localhost:3000/creations", {
@@ -62,7 +60,8 @@ const Create = () => {
     setToggleCreate(!toggleCreate)
   }
 
-
+  // const lineList = creationForm.map(p => <ExqHorseItem key={p.id} poem={p.poem.line} />)
+    
 
   return (
 
@@ -99,8 +98,10 @@ const Create = () => {
       <Button variant="outlined" onClick={handleGetStartedClick}>Get Started</Button>
 
     {toggleCreate ? 
-      <ExquisiteHorse handleChange={handleChange} submitForm={handleSubmit} creationForm={creationForm} creationTitle={creationForm.title} creationText={creationForm.poem.line} handleAddLine={addNewLine} /> 
+      <ExquisiteHorse handleChange={handleChange} submitForm={handleSubmit} creationForm={creationForm} creationTitle={creationForm.title} creationLine={creationForm.line} handleAddLine={addNewLine} /> 
         : toggleCreate}
+
+      {poemList}
 
     </div>
   )
