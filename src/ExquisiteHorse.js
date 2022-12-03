@@ -4,17 +4,35 @@ import Button from '@mui/material/Button';
 
 const ExquisiteHorse = ({creationTitle, creationForm, handleChange, submitForm, creationText, handleAddLine}) => {
 
+  const [nextLine, setNextLine] = useState({
+    line: ""
+  })
+
+  const handleLineChange = (e) => {
+    setNextLine({
+        line: e.target.value
+    })
+}
+
+  const handleLineSubmit = (e) => {
+    e.preventDefault()
+    handleAddLine(nextLine)
+
+    setNextLine({
+        line: ""
+    })
+  }
 
   return (
 
     <div>
+      <hr />
       <div>
         <h1>The Exquisite Horse</h1>
         <img src={require("./img/exquisiteHorseLogo.png")} alt="A Very Exquisite Horse" height="150" />
-        <hr/>
       </div>
 
-        <br/><br/>
+        <br/>
 
         <div >
             A Project for 3 or more collaborators.  
@@ -33,11 +51,10 @@ const ExquisiteHorse = ({creationTitle, creationForm, handleChange, submitForm, 
         
         <br/><br/>
 
-        <form onSubmit={submitForm}>
-          <input type="text" name="text" maxLength="55" onChange={handleChange} value={creationForm.text} />
+        <form onSubmit={handleLineSubmit}>
+          <input type="text" name="line" maxLength="55" onChange={handleLineChange} value={nextLine.line} />
           <br/><br/>
-          <Button onClick={handleAddLine} variant="fill">Next Line</Button>
-          <Button type="submit" variant="fill">Finish</Button>
+          <Button type="submit" variant="fill">Next Line</Button>
         </form>
 
         

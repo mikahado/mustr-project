@@ -12,7 +12,7 @@ const Create = () => {
         authors: 0,
         text: "",
         poem: {
-            line: []
+            line: ""
           },
     })
 
@@ -25,6 +25,16 @@ const Create = () => {
     }
 
     console.log(creationForm)
+
+    const addNewLine = (newLine) => {
+        setCreationForm({
+          ...creationForm,
+            poem: {
+              ...creationForm.poem,
+              newLine,
+            }
+        });
+      }
     
     function handleSubmit(e) {
         e.preventDefault() 
@@ -34,7 +44,9 @@ const Create = () => {
           type: creationForm.type,
           authors: creationForm.authors,
           text: creationForm.text,
-          poem: creationForm.poem.line
+          poem: {
+            line: creationForm.poem.line
+          }
         }
 
         fetch("http://localhost:3000/creations", {
@@ -46,13 +58,12 @@ const Create = () => {
         // .then()
   }
 
+
   const handleGetStartedClick = () => {
     setToggleCreate(!toggleCreate)
   }
 
-  const addNewLine = () => {
-  
-  }
+
 
   return (
 
@@ -89,7 +100,7 @@ const Create = () => {
       <Button variant="outlined" onClick={handleGetStartedClick}>Get Started</Button>
 
     {toggleCreate ? 
-      <ExquisiteHorse handleChange={handleChange} submitForm={handleSubmit} creationForm={creationForm} creationTitle={creationForm.title} creationText={creationForm.text} handleAddLine={addNewLine} /> 
+      <ExquisiteHorse handleChange={handleChange} submitForm={handleSubmit} creationForm={creationForm} creationTitle={creationForm.title} creationText={creationForm.poem.line} handleAddLine={addNewLine} /> 
         : toggleCreate}
 
     </div>
