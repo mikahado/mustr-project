@@ -5,6 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 
 import Creation from './Creation'
+import ExquisiteHorse from './ExquisiteHorse'
 
 
 // import CreationForm from './CreationForm'
@@ -65,7 +66,7 @@ const Creations = () => {
                         {`${showDetails.authors} Collaborators`}
                     </Typography>
                     <Typography variant="body1">
-                    {showDetails.text} 
+                        {showDetails.text} 
                     <br />
                     </Typography>
                 </CardContent>

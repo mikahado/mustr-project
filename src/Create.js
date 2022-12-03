@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Button from '@mui/material/Button';
+import ExquisiteHorse from './ExquisiteHorse';
 import { CreateOutlined } from '@mui/icons-material';
 
 const Create = () => {
@@ -14,7 +15,6 @@ const Create = () => {
             line: ""
         }
     })
-
 
     const handleChange = (e) => {
         setCreationForm({
@@ -82,7 +82,7 @@ const Create = () => {
 
       <Button variant="outlined" onClick={handleGetStartedClick}>Get Started</Button>
 
-    {/* {toggleCreate ? <ExquisiteHorse title={creationForm.title} creationForm={creationForm.text.line} setCreationForm={setCreationForm} /> : toggleCreate} */}
+    {toggleCreate ? <ExquisiteHorse title={creationForm.title} creationForm={creationForm.text.line} setCreationForm={setCreationForm} /> : toggleCreate}
 
     
     </div>
