@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Button from '@mui/material/Button';
 import ExquisiteHorse from './ExquisiteHorse';
 import ExqHorseItem from './ExquisiteItem'
+import HaikuCreate from './HaikuCreate'
 
 const Create = () => {
 
@@ -15,6 +16,8 @@ const Create = () => {
         line: ""
     })
 
+    console.log(creationForm)
+
     const handleChange = (e) => {
         setCreationForm({
         ...creationForm, [e.target.name]: e.target.value
@@ -25,7 +28,7 @@ const Create = () => {
 
       }
 
-    const poemList = Object.values(creationForm.line).map(l => <ExqHorseItem poemLine={l} />)
+    // const poemList = Object.values(creationForm.line).map(l => <ExqHorseItem poemLine={l} />)
 
   
     function handleSubmit(e) {
@@ -86,9 +89,13 @@ const Create = () => {
 
       <Button variant="outlined" onClick={handleGetStartedClick}>Get Started</Button>
 
-    {toggleCreate ? 
-      <ExquisiteHorse handleChange={handleChange} submitForm={handleSubmit} creationForm={creationForm} creationTitle={creationForm.title} creationLine={creationForm.line} handleAddLine={addNewLine} poemList={poemList} /> 
+      {toggleCreate ? 
+      <HaikuCreate handleChange={handleChange} creationForm={creationForm} setCreationForm={setCreationForm} submitForm={handleSubmit} creationTitle={creationForm.title} creationLine={creationForm.line} handleAddLine={addNewLine} /> 
         : toggleCreate}
+
+    {/* {toggleCreate ? 
+      <ExquisiteHorse handleChange={handleChange} submitForm={handleSubmit} creationForm={creationForm} creationTitle={creationForm.title} creationLine={creationForm.line} handleAddLine={addNewLine} poemList={poemList} /> 
+        : toggleCreate} */}
 
     </div>
   )

@@ -38,8 +38,6 @@ const ExquisiteHorse = ({creationTitle, creationForm, handleChange, submitForm, 
           <br/><br/>
           <Button type="submit" variant="fill">Next Line</Button>
         </form>
-
-        
         
         <br/><br/><br/><br/>
     </div>
