@@ -13,7 +13,6 @@ const Create = () => {
         type: "",
         authors: 0,
         text: "",
-        line: ""
     })
 
     console.log(creationForm)
@@ -24,13 +23,12 @@ const Create = () => {
         })
     }
 
-    const addNewLine = () => {
-
-      }
-
-    // const poemList = Object.values(creationForm.line).map(l => <ExqHorseItem poemLine={l} />)
-
-  
+    const addHaiku = (line) => {
+      setCreationForm({
+        ...creationForm, line
+      })
+    }
+      
     function handleSubmit(e) {
         e.preventDefault() 
 
@@ -39,7 +37,6 @@ const Create = () => {
           type: creationForm.type,
           authors: creationForm.authors,
           text: creationForm.text,
-          line: creationForm.line
         }
 
         fetch("http://localhost:3000/creations", {
@@ -53,12 +50,11 @@ const Create = () => {
   const handleGetStartedClick = () => {
     setToggleCreate(!toggleCreate)
   }
-    
 
   return (
 
     <div>
-      <form onSubmit={handleSubmit}>
+      <form id="my-submit" onSubmit={handleSubmit}>
         <hr/>
         <label>Working Title:</label>
           <br/>
@@ -90,7 +86,7 @@ const Create = () => {
       <Button variant="outlined" onClick={handleGetStartedClick}>Get Started</Button>
 
       {toggleCreate ? 
-      <HaikuCreate handleChange={handleChange} creationForm={creationForm} setCreationForm={setCreationForm} submitForm={handleSubmit} creationTitle={creationForm.title} creationLine={creationForm.line} handleAddLine={addNewLine} /> 
+      <HaikuCreate creationForm={creationForm} setCreationForm={setCreationForm} creationTitle={creationForm.title} handleChange={handleChange} addHaiku={addHaiku} handleSubmit={handleSubmit}/> 
         : toggleCreate}
 
     {/* {toggleCreate ? 

@@ -3,30 +3,30 @@ import HaikuCreate from './HaikuCreate'
 
 const HaikuForm = ({addNewLine}) => {
 
-    const [poem, setPoem] = useState({
+    const [nextLine, setNextLine] = useState({
         line: ""
     })
 
     const handleChange = (e) => {
-        setPoem({
+        setNextLine({
             line: e.target.value
         })
     }
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        addNewLine(poem)
-        setPoem({
+        
+        addNewLine(nextLine)
+        setNextLine({
             line: ""
         })
     }
 
-
   return (
     <form onSubmit={handleSubmit}>
         <br />
-        <label>Write a new line: </label>
-        <input type="text" onChange={handleChange} value={poem.line} placeholder="Enter your line"/>
+        <input type="text" name="line" onChange={handleChange} value={nextLine.line} placeholder="Enter a new line"/>
+        <br /><br />
         <input type="submit" />
     </form>
   )
