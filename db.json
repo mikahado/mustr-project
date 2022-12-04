@@ -83,6 +83,76 @@
       "authors": 0,
       "text": "",
       "id": 10
+    },
+    {
+      "title": "Corpse Test!",
+      "type": "poetry",
+      "authors": "4",
+      "text": "",
+      "line": [
+        {
+          "id": 1,
+          "line": "1"
+        },
+        {
+          "id": 2,
+          "line": "2"
+        },
+        {
+          "id": 3,
+          "line": "3"
+        },
+        {
+          "id": 4,
+          "line": "4"
+        },
+        {
+          "id": 5,
+          "line": "5"
+        }
+      ],
+      "id": 11
+    },
+    {
+      "title": "Corpse is Go",
+      "type": "poetry",
+      "authors": "3",
+      "text": "",
+      "line": [
+        {
+          "id": 1,
+          "line": "Here is the first line"
+        },
+        {
+          "id": 2,
+          "line": "When I write the next line the previous will be replaced"
+        },
+        {
+          "id": 3,
+          "line": "So when it is the third persons turn they will only see the previous line"
+        },
+        {
+          "id": 4,
+          "line": "and you can go on and on like this"
+        },
+        {
+          "id": 5,
+          "line": "for as long as you would like"
+        },
+        {
+          "id": 6,
+          "line": "passing around the device"
+        },
+        {
+          "id": 7,
+          "line": "so each person can only respond to the previous line"
+        },
+        {
+          "id": 8,
+          "line": ""
+        }
+      ],
+      "id": 12
     }
   ]
 }

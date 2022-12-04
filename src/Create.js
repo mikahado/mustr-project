@@ -4,44 +4,43 @@ import HaikuCreate from './HaikuCreate'
 
 const Create = () => {
 
-    const [toggleCreate, setToggleCreate] = useState(false)
+  const [toggleCreate, setToggleCreate] = useState(false)
 
-    const [creationForm, setCreationForm] = useState({
-        title: "",
-        type: "",
-        authors: 0,
-        text: "",
+  const [creationForm, setCreationForm] = useState({
+    title: "",
+    type: "",
+    authors: 0,
+    text: "",
+  })
+
+  const handleChange = (e) => {
+    setCreationForm({
+    ...creationForm, [e.target.name]: e.target.value
     })
+  }
 
-    const handleChange = (e) => {
-        setCreationForm({
-        ...creationForm, [e.target.name]: e.target.value
-        })
+  const addHaiku = (line) => {
+    setCreationForm({
+      ...creationForm, line
+    })
+  }
+    
+  function handleSubmit(e) {
+    e.preventDefault() 
+
+    const newText = {
+      title: creationForm.title,
+      type: creationForm.type,
+      authors: creationForm.authors,
+      text: creationForm.text,
+      line: creationForm.line
     }
 
-    const addHaiku = (line) => {
-      setCreationForm({
-        ...creationForm, line
-      })
-    }
-      
-    function handleSubmit(e) {
-        e.preventDefault() 
-
-        const newText = {
-          title: creationForm.title,
-          type: creationForm.type,
-          authors: creationForm.authors,
-          text: creationForm.text,
-          line: creationForm.line
-          
-        }
-
-        fetch("http://localhost:3000/creations", {
-        method: "POST",
-        headers: {"Content-Type" : "application/json"},
-        body: JSON.stringify(newText)
-        })
+    fetch("http://localhost:3000/creations", {
+      method: "POST",
+      headers: {"Content-Type" : "application/json"},
+      body: JSON.stringify(newText)
+    })
   }
 
 

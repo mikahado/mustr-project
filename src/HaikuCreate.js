@@ -5,14 +5,16 @@ import Button from '@mui/material/Button';
 
 const HaikuCreate = ({addHaiku, creationTitle}) => {
 
-    const [haiku, setHaiku] = useState([])
+  const [haiku, setHaiku] = useState([])
 
-    const addNewLine = (line) => {
-      const newLine = {id: haiku.length+1, ...line}
-      setHaiku([...haiku, newLine])
-    }
+  const addNewLine = (line) => {
+    const newLine = {id: haiku.length+1, ...line}
+    setHaiku([...haiku, newLine])
+  }
 
-    const haikuList = haiku.map(h => <Haiku key={h.id} haiku={h.line} />)
+  const haikuList = haiku.map(h => <Haiku key={h.id} haiku={h.line} />)
+  const game = haikuList.slice(-1)
+  console.log(game)
 
   return (
     <div>
@@ -20,7 +22,7 @@ const HaikuCreate = ({addHaiku, creationTitle}) => {
       <hr />
         <br />
         <h2>{creationTitle}</h2>
-        <h4>{haikuList}</h4>
+        <h4>{game}</h4>
         <br/>
         
         <HaikuForm addNewLine={addNewLine}/>

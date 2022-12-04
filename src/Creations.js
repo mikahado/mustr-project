@@ -28,7 +28,7 @@ const Creations = () => {
     }, []) 
 
     const creationsList = creations.map((c) => 
-    
+
         <Creation 
             key={c.id}
             creation={c}
