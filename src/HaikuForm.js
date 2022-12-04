@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import HaikuCreate from './HaikuCreate'
 
 const HaikuForm = ({addNewLine}) => {
 
@@ -15,7 +14,6 @@ const HaikuForm = ({addNewLine}) => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        
         addNewLine(nextLine)
         setNextLine({
             line: ""

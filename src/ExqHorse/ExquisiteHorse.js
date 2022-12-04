@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Create from './Create'
+import Create from '../Create'
 import Button from '@mui/material/Button';
 
 const ExquisiteHorse = ({creationTitle, creationForm, handleChange, submitForm, creationLine}) => {

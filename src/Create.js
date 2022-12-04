@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import Button from '@mui/material/Button';
-import ExquisiteHorse from './ExquisiteHorse';
-import ExqHorseItem from './ExquisiteItem'
 import HaikuCreate from './HaikuCreate'
 
 const Create = () => {

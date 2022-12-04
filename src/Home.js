@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button } from "./styled/Button.style"
 
-
 const Home = () => {
     return (
 

@@ -3,7 +3,7 @@ import Haiku from './Haiku'
 import HaikuForm from './HaikuForm'
 import Button from '@mui/material/Button';
 
-const HaikuCreate = ({handleSubmit, addHaiku, creationTitle}) => {
+const HaikuCreate = ({addHaiku, creationTitle}) => {
 
     const [haiku, setHaiku] = useState([])
 

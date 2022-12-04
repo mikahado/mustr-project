@@ -10,9 +10,6 @@ function Navigation() {
       <NavLink
         to="/"
         exact
-        activeStyle={{
-          background: "black",
-        }}
       >
         Home
       </NavLink>
@@ -20,9 +17,6 @@ function Navigation() {
       <NavLink
         to="/creations"
         exact
-        activeStyle={{
-          background: "black",
-        }}
       >
         Creations
       </NavLink>
@@ -30,9 +24,6 @@ function Navigation() {
       <NavLink
         to="/creations/new"
         exact
-        activeStyle={{
-          background: "black",
-        }}
       >
         New
       </NavLink>
@@ -40,9 +31,6 @@ function Navigation() {
       <NavLink
         to="/about"
         exact
-        activeStyle={{
-          background: "black",
-        }}
       >
         About
       </NavLink>

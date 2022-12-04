@@ -5,10 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 
 import Creation from './Creation'
-import ExquisiteHorse from './ExquisiteHorse'
 
-
-// import CreationForm from './CreationForm'
 
 const Creations = () => {
 
@@ -79,10 +76,8 @@ const Creations = () => {
                 </CardContent>
             </Card>
             
-            
         </div>
     )
-
 }
 
 export default Creations
