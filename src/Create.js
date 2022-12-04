@@ -15,8 +15,6 @@ const Create = () => {
         text: "",
     })
 
-    console.log(creationForm)
-
     const handleChange = (e) => {
         setCreationForm({
         ...creationForm, [e.target.name]: e.target.value
@@ -37,6 +35,8 @@ const Create = () => {
           type: creationForm.type,
           authors: creationForm.authors,
           text: creationForm.text,
+          line: creationForm.line
+          
         }
 
         fetch("http://localhost:3000/creations", {
@@ -80,6 +80,8 @@ const Create = () => {
               <option value="4">4</option>
             </select>
           <br/><br/> <br />
+
+          <input type="submit" onSubmit={handleSubmit} value="PRINT TO BACKEND" />
 
       </form> 
 

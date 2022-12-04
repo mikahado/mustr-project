@@ -17,7 +17,7 @@ const Creations = () => {
         title: "",
         authors: "",
         text: "",
-        line: ""
+        line: "",
     })
 
     console.log(showDetails)
@@ -68,6 +68,11 @@ const Creations = () => {
                     </Typography>
                     <Typography variant="body1">
                         {showDetails.text} 
+                         
+                    <br />
+                    </Typography>
+                    <Typography variant="body1">
+                        {showDetails.line} 
                          
                     <br />
                     </Typography>
