@@ -21,18 +21,11 @@ const Create = () => {
         })
     }
 
-    const addNewLine = (newLine) => {
-        setCreationForm({
-          ...creationForm,
-              newLine
-        });
+    const addNewLine = () => {
+
       }
 
-  console.log(creationForm)
-
-      const poemList = Object.values(creationForm).map(l => <ExqHorseItem poemLine={l} />)
-
-      console.log(poemList)
+    const poemList = Object.values(creationForm.line).map(l => <ExqHorseItem poemLine={l} />)
 
   
     function handleSubmit(e) {
@@ -51,16 +44,12 @@ const Create = () => {
         headers: {"Content-Type" : "application/json"},
         body: JSON.stringify(newText)
         })
-        // .then((r) => r.json())
-        // .then()
   }
 
 
   const handleGetStartedClick = () => {
     setToggleCreate(!toggleCreate)
   }
-
-  // const lineList = creationForm.map(p => <ExqHorseItem key={p.id} poem={p.poem.line} />)
     
 
   return (
@@ -98,10 +87,8 @@ const Create = () => {
       <Button variant="outlined" onClick={handleGetStartedClick}>Get Started</Button>
 
     {toggleCreate ? 
-      <ExquisiteHorse handleChange={handleChange} submitForm={handleSubmit} creationForm={creationForm} creationTitle={creationForm.title} creationLine={creationForm.line} handleAddLine={addNewLine} /> 
+      <ExquisiteHorse handleChange={handleChange} submitForm={handleSubmit} creationForm={creationForm} creationTitle={creationForm.title} creationLine={creationForm.line} handleAddLine={addNewLine} poemList={poemList} /> 
         : toggleCreate}
-
-      {poemList}
 
     </div>
   )

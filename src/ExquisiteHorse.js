@@ -2,26 +2,8 @@ import React, {useState} from 'react'
 import Create from './Create'
 import Button from '@mui/material/Button';
 
-const ExquisiteHorse = ({creationTitle, creationForm, handleChange, submitForm, creationLine, handleAddLine}) => {
+const ExquisiteHorse = ({creationTitle, creationForm, handleChange, submitForm, creationLine}) => {
 
-  const [nextLine, setNextLine] = useState({
-    line: ""}
-    )
-
-  const handleLineChange = (e) => {
-    setNextLine({
-        line: e.target.value
-    })
-}
-
-  const handleLineSubmit = (e) => {
-    e.preventDefault()
-    handleAddLine(nextLine)
-
-    setNextLine({
-        line: ""
-    })
-  }
 
   return (
 
@@ -52,11 +34,12 @@ const ExquisiteHorse = ({creationTitle, creationForm, handleChange, submitForm, 
         <br/><br/>
 
         <form onSubmit={submitForm}>
-          <input type="text" name="line" maxLength="55" onChange={handleChange} value={creationLine} />
+          <input type="text" name="line" maxLength="55" onChange={handleChange} value={creationForm.line} />
           <br/><br/>
           <Button type="submit" variant="fill">Next Line</Button>
         </form>
 
+        
         
         <br/><br/><br/><br/>
     </div>

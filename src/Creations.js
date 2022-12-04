@@ -17,9 +17,7 @@ const Creations = () => {
         title: "",
         authors: "",
         text: "",
-        poem: {
-            line: [],
-        }
+        line: ""
     })
 
     console.log(showDetails)
