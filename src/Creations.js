@@ -71,7 +71,9 @@ const Creations = () => {
                     <br />
                     </Typography>
                     <Typography variant="body1">
+                        
                         {showDetails.lines ? showDetails.lines.map(l => <p>{l.line}</p>) : null}
+                        
                     <br />
                     </Typography>
                 </CardContent>

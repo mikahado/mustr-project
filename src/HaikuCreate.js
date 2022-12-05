@@ -20,6 +20,7 @@ const HaikuCreate = ({addHaiku, creationTitle, handleSubmit}) => {
     <div>
       <br />
       <hr />
+      <img src={require("./img/exquisiteHorseLogo.png")} alt="A Very Exquisite Horse" height="100" />
       <p><strong>How to play <em>Exquisite Horse</em></strong></p>
       <p>1. Write a line in the text box. Push Enter.</p>
       <p>2. Click SAVE LINE, then pass the device to the next author.</p>

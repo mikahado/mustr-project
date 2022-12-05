@@ -21,7 +21,7 @@ function Navigation() {
 
     <ButtonGroup size="large" variant="contained" aria-label="contained button group">
 
-        <Button color="secondary">
+        <Button>
           <NavLink
             to="/"
             exact
@@ -30,7 +30,7 @@ function Navigation() {
           </NavLink>
         </Button>
 
-        <Button color="secondary">
+        <Button>
           <NavLink
             to="/creations"
             exact
@@ -39,7 +39,7 @@ function Navigation() {
           </NavLink>
         </Button>
 
-        <Button color="secondary">
+        <Button>
           <NavLink
             to="/creations/new"
             exact
@@ -48,7 +48,7 @@ function Navigation() {
           </NavLink>
         </Button>
 
-        <Button color="secondary">
+        <Button>
           <NavLink
             to="/about"
             exact

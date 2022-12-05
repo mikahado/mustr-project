@@ -4,6 +4,7 @@ import Home from './Home';
 import Navigation from './Navigation'
 import Creations from './Creations'
 import Create from './Create'
+import About from './About'
 import './App.css';
 
 
@@ -18,8 +19,7 @@ function App() {
           <Route exact path="/" component={Home}/> 
           <Route exact path="/creations" component={Creations} />
           <Route exact path="/creations/new" component={Create}/>
-          {/* <Route path="/creations/:id" />  */}
-          <Route path="/about" /> 
+          <Route path="/about" component={About} /> 
         </Switch>
       </div>
 
