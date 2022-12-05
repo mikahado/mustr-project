@@ -28,6 +28,8 @@ const HaikuCreate = ({addHaiku, creationTitle, handleSubmit}) => {
         <HaikuForm addNewLine={addNewLine}/>
         <br />
         <Button type="click" variant="outlined" onClick={() => addHaiku(haiku)}> Save </Button>
+        <Button type="submit" onClick={handleSubmit} value="PRINT TO BACKEND" > Print </Button>
+
         <input type="submit" onClick={handleSubmit} value="PRINT TO BACKEND" />
         
     </div>

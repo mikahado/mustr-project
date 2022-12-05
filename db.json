@@ -5,7 +5,7 @@
       "type": "poetry",
       "authors": "2",
       "text": "",
-      "line": [
+      "lines": [
         {
           "id": 1,
           "line": "First line of a poem"
@@ -40,28 +40,28 @@
       "title": "Karawane",
       "type": "Poem",
       "authors": 2,
-      "text": ""
+      "text": "aaa"
     },
     {
       "id": 5,
       "title": "Crimson Wall",
       "type": "Short Story",
       "authors": 2,
-      "text": ""
+      "text": "vsv"
     },
     {
       "id": 6,
       "title": "Lockdown Cycle",
       "type": "Film",
       "authors": 1,
-      "text": ""
+      "text": "fdafda"
     },
     {
       "id": 7,
       "title": "Pieces of War",
       "type": "Novel",
       "authors": 2,
-      "text": ""
+      "text": "geagdf"
     },
     {
       "id": 8,
@@ -69,20 +69,6 @@
       "type": "Film",
       "authors": 2,
       "text": "Selfish Jean"
-    },
-    {
-      "id": 9,
-      "title": "The Lottery",
-      "type": "Short Story",
-      "authors": 4,
-      "text": "The Lottery"
-    },
-    {
-      "title": "few",
-      "type": "poetry",
-      "authors": 0,
-      "text": "",
-      "id": 10
     }
   ]
 }

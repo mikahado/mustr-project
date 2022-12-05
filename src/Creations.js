@@ -11,13 +11,13 @@ const Creations = () => {
 
     const [creations, setCreations] = useState([])
     const [showDetails, setShowDetails] = useState({
-        title: "",
-        authors: "",
-        text: "",
-        line: "",
+        title: " ",
+        authors: " ",
+        text: " ",
+        lines: [{
+            line: " "
+        }],
     })
-
-    console.log(showDetails)
 
     useEffect(() => {
         fetch("http://localhost:3000/creations")
@@ -54,6 +54,7 @@ const Creations = () => {
                 </tbody>
             </table>
             <hr/><br/>
+
             
             <Card sx={{ minWidth: 275 }}>
                 <CardContent>
@@ -65,12 +66,10 @@ const Creations = () => {
                     </Typography>
                     <Typography variant="body1">
                         {showDetails.text} 
-                         
                     <br />
                     </Typography>
                     <Typography variant="body1">
-                        {showDetails.line} 
-                         
+                        {showDetails.lines ? showDetails.lines.map(l => <p>{l.line}</p>) : null}
                     <br />
                     </Typography>
                 </CardContent>
