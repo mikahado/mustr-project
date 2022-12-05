@@ -1,6 +1,12 @@
+:root {
+  background-color: #252523;
+  padding: 3em;
+}
+
 .App {
   text-align: center;
-  background: whitesmoke
+  background: #fff6f3;
+  color: 0e1829;
 }
 
 .App-header {

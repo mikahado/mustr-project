@@ -5,7 +5,7 @@ const Home = () => {
 
         <div className="App">
             
-            <h1>DOME</h1>
+            <h1>MUSTR</h1>
             <h2>an app for collaborative writers</h2>
             <div>
                 <hr/>

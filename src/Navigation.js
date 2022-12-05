@@ -1,39 +1,65 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
-//This is where to link primary CSS for navbar
+import Button from '@mui/material/Button';
+import ButtonGroup from '@mui/material/ButtonGroup';
+import Box from '@mui/material/Box';
 
 function Navigation() {
   return (
     <div>
 
-      <NavLink
-        to="/"
-        exact
-      >
-        Home
-      </NavLink>
-      
-      <NavLink
-        to="/creations"
-        exact
-      >
-        Creations
-      </NavLink>
+<Box
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        '& > *': {
+          m: 1,
+        },
+      }}
+    >
 
-      <NavLink
-        to="/creations/new"
-        exact
-      >
-        New
-      </NavLink>
+    <ButtonGroup size="large" variant="contained" aria-label="contained button group">
 
-      <NavLink
-        to="/about"
-        exact
-      >
-        About
-      </NavLink>
+        <Button color="secondary">
+          <NavLink
+            to="/"
+            exact
+          >
+            Home
+          </NavLink>
+        </Button>
+
+        <Button color="secondary">
+          <NavLink
+            to="/creations"
+            exact
+          >
+            Creations
+          </NavLink>
+        </Button>
+
+        <Button color="secondary">
+          <NavLink
+            to="/creations/new"
+            exact
+          >
+            New
+          </NavLink>
+        </Button>
+
+        <Button color="secondary">
+          <NavLink
+            to="/about"
+            exact
+          >
+            About
+          </NavLink>
+        </Button>
+
+    </ButtonGroup>  
+
+  </Box>
       
     </div>
   );
