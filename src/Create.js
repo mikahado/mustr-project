@@ -33,7 +33,7 @@ const Create = () => {
       type: creationForm.type,
       authors: creationForm.authors,
       text: creationForm.text,
-      line: creationForm.line
+      lines: creationForm.line
     }
 
     fetch("http://localhost:3000/creations", {
@@ -41,6 +41,7 @@ const Create = () => {
       headers: {"Content-Type" : "application/json"},
       body: JSON.stringify(newText)
     })
+
   }
 
 
@@ -78,7 +79,7 @@ const Create = () => {
             </select>
           <br/><br/> <br />
 
-          <input type="submit" onSubmit={handleSubmit} value="PRINT TO BACKEND" />
+          
 
       </form> 
 

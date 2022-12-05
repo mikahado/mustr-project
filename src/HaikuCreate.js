@@ -3,7 +3,7 @@ import Haiku from './Haiku'
 import HaikuForm from './HaikuForm'
 import Button from '@mui/material/Button';
 
-const HaikuCreate = ({addHaiku, creationTitle}) => {
+const HaikuCreate = ({addHaiku, creationTitle, handleSubmit}) => {
 
   const [haiku, setHaiku] = useState([])
 
@@ -28,6 +28,7 @@ const HaikuCreate = ({addHaiku, creationTitle}) => {
         <HaikuForm addNewLine={addNewLine}/>
         <br />
         <Button type="click" variant="outlined" onClick={() => addHaiku(haiku)}> Save </Button>
+        <input type="submit" onClick={handleSubmit} value="PRINT TO BACKEND" />
         
     </div>
   )
