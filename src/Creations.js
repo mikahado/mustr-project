@@ -44,7 +44,7 @@ const Creations = () => {
                 <thead>
                     <tr>
                         <th scope="col">Title</th>
-                        <th scope="col"># of Authors</th>
+                        <th scope="col"># of Collaborators</th>
                         <th scope="col">Type</th>
                         <th scope="col"></th>
                     </tr>
@@ -54,6 +54,8 @@ const Creations = () => {
                 </tbody>
             </table>
             <hr/><br/>
+
+            
 
             
             <Card sx={{ minWidth: 275 }}>

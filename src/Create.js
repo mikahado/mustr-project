@@ -79,19 +79,18 @@ const Create = () => {
             </select>
           <br/><br/> <br />
 
-          
 
       </form> 
 
       <Button variant="outlined" onClick={handleGetStartedClick}>Get Started</Button>
+      <br /><br />
 
       {toggleCreate ? 
-      <HaikuCreate creationForm={creationForm} setCreationForm={setCreationForm} creationTitle={creationForm.title} handleChange={handleChange} addHaiku={addHaiku} handleSubmit={handleSubmit}/> 
+          <HaikuCreate 
+            creationTitle={creationForm.title} 
+            addHaiku={addHaiku} 
+            handleSubmit={handleSubmit}/> 
         : toggleCreate}
-
-    {/* {toggleCreate ? 
-      <ExquisiteHorse handleChange={handleChange} submitForm={handleSubmit} creationForm={creationForm} creationTitle={creationForm.title} creationLine={creationForm.line} handleAddLine={addNewLine} poemList={poemList} /> 
-        : toggleCreate} */}
 
     </div>
   )
