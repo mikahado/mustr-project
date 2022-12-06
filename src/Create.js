@@ -13,6 +13,10 @@ const Create = () => {
 
   const [toggleCreate, setToggleCreate] = useState(false)
 
+  const handleGetStartedClick = () => {
+    setToggleCreate(!toggleCreate)
+  }
+
   const handleChange = (e) => {
     setCreationForm({
     ...creationForm, [e.target.name]: e.target.value
@@ -32,7 +36,6 @@ const Create = () => {
       title: creationForm.title,
       type: creationForm.type,
       authors: creationForm.authors,
-      text: creationForm.text,
       lines: creationForm.line
     }
 
@@ -45,10 +48,7 @@ const Create = () => {
       .then(data => console.log("persisted to backend:", data))
   }
 
-  const handleGetStartedClick = () => {
-    setToggleCreate(!toggleCreate)
-  }
-
+ 
   return (
 
     <div>
@@ -77,13 +77,12 @@ const Create = () => {
               <option value="3">3</option>
               <option value="4">4</option>
             </select>
-          <br/><br/> <br />
-
+          <br/><br/><br />
 
       </form> 
 
       <Button variant="outlined" onClick={handleGetStartedClick}>Get Started</Button>
-      <br /><br />
+          <br /><br />
 
       {toggleCreate ? 
           <HaikuCreate 

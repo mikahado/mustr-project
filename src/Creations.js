@@ -6,36 +6,30 @@ import Typography from '@mui/material/Typography';
 
 import Creation from './Creation'
 
-const Creations = () => {
+const Creations = ({creations}) => {
 
-    const [creations, setCreations] = useState([])
-    const [showDetails, setShowDetails] = useState({
+    console.log("do we have our STOOF?", creations)
+
+    const [showContent, setShowContent] = useState({
         title: " ",
         authors: " ",
-        text: " ",
         lines: [{
             line: " "
         }],
     })
 
-    useEffect(() => {
-        fetch("http://localhost:3000/creations")
-        .then(resp => resp.json())
-        .then(data => {
-            setCreations(data)
-        })
-    }, []) 
+    
 
     const creationsList = creations.map((c) => 
-
         <Creation 
-            key={c.id}
+            key={c.title}
             creation={c}
-            setShowDetails={setShowDetails}
+            setShowContent={setShowContent}
             />
         )
 
     return (
+
         <div>
             <br />
             <h2>Past Creations</h2>
@@ -55,27 +49,29 @@ const Creations = () => {
             </table>
             <hr/><br/>
 
-            <Card sx={{ minWidth: 275 }}>
+            <div>
+                <h2>{showContent.title}</h2>
+                <h4>{`${showContent.authors} Collaborators`}</h4>
+                {showContent.lines.map(l => <p> {l.line} </p>)}
+            </div>
+
+            {/* <Card sx={{ minWidth: 275 }}>
                 <CardContent>
                     <Typography variant="h5" component="div">
-                        {showDetails.title}
+                        {showContent.title}
                     </Typography>
                     <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                        {`${showDetails.authors} Collaborators`}
+                        {`${showContent.authors} Collaborators`}
                     </Typography>
-                    <Typography variant="body1">
-                        {showDetails.text} 
-                    <br />
-                    </Typography>
-                    <Typography variant="body1">
+                    <Typography variant="body1" component="p">
                         
-                        {showDetails.lines ? showDetails.lines.map(l => <p>{l.line}</p>) : null}
+                        {showContent.lines.map(l => <p key="{showContent.lines}"> {l.line} </p>)}
                         
                     <br />
                     </Typography>
                 </CardContent>
-            </Card>
-            
+            </Card> */}
+            <br />
         </div>
     )
 }

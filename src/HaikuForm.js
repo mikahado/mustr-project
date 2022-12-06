@@ -26,7 +26,6 @@ const HaikuForm = ({addNewLine}) => {
         <br />
         <input type="text" name="line" onChange={handleChange} value={nextLine.line} placeholder="Press return"/>
         <br /><br />
-        {/* <input type="submit" /> */}
        
     </form>
   )
