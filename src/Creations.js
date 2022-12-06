@@ -29,6 +29,7 @@ const Creations = ({creations}) => {
         <div>
             <br />
             <h2>Past Creations</h2>
+            <br />
             <hr />
             <table className="table table-striped">
                 <thead>
@@ -45,11 +46,10 @@ const Creations = ({creations}) => {
             </table>
             <hr/><br/>
 
-            <div>
+          
                 <h2>{showContent.title}</h2>
-                <h4>{`${showContent.authors} Collaborators`}</h4>
                 {showContent.lines.map(l => <p> {l.line} </p>)}
-            </div>
+           
 
             {/* <Card sx={{ minWidth: 275 }}>
                 <CardContent>

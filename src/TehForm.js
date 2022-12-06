@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-const HaikuForm = ({addNewLine}) => {
+const TehForm = ({addNewLine}) => {
 
     const [nextLine, setNextLine] = useState({
         line: ""
@@ -31,4 +31,4 @@ const HaikuForm = ({addNewLine}) => {
   )
 }
 
-export default HaikuForm
+export default TehForm

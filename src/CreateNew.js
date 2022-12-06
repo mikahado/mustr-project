@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
 import Button from '@mui/material/Button';
-import HaikuCreate from './HaikuCreate'
+import TehMain from './TehMain'
 
-const Create = () => {
+const CreateNew = () => {
 
   const [creationForm, setCreationForm] = useState({
     title: "",
     type: "",
     authors: 0,
-    text: "",
+    text: ""
   })
 
   const [toggleCreate, setToggleCreate] = useState(false)
@@ -23,7 +23,7 @@ const Create = () => {
     })
   }
 
-  const addHaiku = (line) => {
+  const addTehPoem = (line) => {
     setCreationForm({
       ...creationForm, line
     })
@@ -52,8 +52,13 @@ const Create = () => {
   return (
 
     <div>
+        <br />
+        <h2>New Creation</h2>
+        <br />
+
       <form id="my-submit" onSubmit={handleSubmit}>
         <hr/>
+        <br />
         <label>Working Title:</label>
           <br/>
             <input type="text" name="title" onChange={handleChange} value={creationForm.title} />
@@ -85,9 +90,9 @@ const Create = () => {
           <br /><br />
 
       {toggleCreate ? 
-          <HaikuCreate 
+          <TehMain
             creationTitle={creationForm.title} 
-            addHaiku={addHaiku} 
+            addTehPoem={addTehPoem} 
             handleSubmit={handleSubmit}/> 
         : toggleCreate}
 
@@ -95,4 +100,4 @@ const Create = () => {
   )
 }
 
-export default Create
+export default CreateNew

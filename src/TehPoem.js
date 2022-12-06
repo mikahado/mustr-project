@@ -1,15 +1,15 @@
 import React from 'react'
 
-const Haiku = ({haiku}) => {
+const TehPoem = ({poem}) => {
     
   return (
     <div>
         <>
-            <p>{haiku}</p>
+            <p>{poem}</p>
         </>
 
     </div>
   )
 }
 
-export default Haiku
+export default TehPoem

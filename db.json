@@ -1,9 +1,9 @@
 {
   "creations": [
     {
-      "title": "An Exquisite Horse",
+      "title": "gag",
       "type": "poetry",
-      "authors": "4",
+      "authors": "3",
       "lines": [
         {
           "line": "1"
@@ -25,35 +25,29 @@
         },
         {
           "line": "7"
-        },
-        {
-          "line": "8"
         }
       ],
       "id": 1
     },
     {
-      "title": "Testy testy",
+      "title": "My First Exquisite Horse",
       "type": "poetry",
-      "authors": "4",
+      "authors": "3",
       "lines": [
         {
-          "line": "1"
+          "line": "In the woods there was a donkey"
         },
         {
-          "line": "2"
+          "line": "They called the donkey an ass"
         },
         {
-          "line": "3"
+          "line": "Are you an ass, asked the Asker"
         },
         {
-          "line": "4"
+          "line": "No, said the donkey"
         },
         {
-          "line": "5"
-        },
-        {
-          "line": "6"
+          "line": "I am an exquisite horse."
         }
       ],
       "id": 2
