@@ -9,7 +9,7 @@ const CreateNew = () => {
     title: "",
     type: "",
     authors: 0,
-    text: ""
+    line: ""
   })
 
   const navigate = useNavigate();
@@ -50,7 +50,9 @@ const CreateNew = () => {
     })
       // .then(resp => resp.json())
       // .then(data => console.log("persisted to backend:", data))
-      navigate('/');
+      
+      navigate('/creations');
+      window.location.reload()
   }
  
   return (

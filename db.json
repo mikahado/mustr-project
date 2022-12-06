@@ -1,21 +1,5 @@
 {
   "creations": [
-    {
-      "title": "Praying",
-      "type": "poetry",
-      "authors": "3",
-      "lines": [
-        {
-          "line": "gagag"
-        },
-        {
-          "line": "fdfd"
-        },
-        {
-          "line": "erer"
-        }
-      ],
-      "id": 1
-    }
+    
   ]
 }
