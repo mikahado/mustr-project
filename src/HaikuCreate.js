@@ -8,7 +8,7 @@ const HaikuCreate = ({addHaiku, creationTitle, handleSubmit}) => {
   const [haiku, setHaiku] = useState([])
 
   const addNewLine = (line) => {
-    const newLine = {id: haiku.length+1, ...line}
+    const newLine = {...line}
     setHaiku([...haiku, newLine])
   }
 

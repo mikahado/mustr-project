@@ -4,14 +4,14 @@ import HaikuCreate from './HaikuCreate'
 
 const Create = () => {
 
-  const [toggleCreate, setToggleCreate] = useState(false)
-
   const [creationForm, setCreationForm] = useState({
     title: "",
     type: "",
     authors: 0,
     text: "",
   })
+
+  const [toggleCreate, setToggleCreate] = useState(false)
 
   const handleChange = (e) => {
     setCreationForm({
@@ -41,9 +41,9 @@ const Create = () => {
       headers: {"Content-Type" : "application/json"},
       body: JSON.stringify(newText)
     })
-
+      .then(resp => resp.json())
+      .then(data => console.log("persisted to backend:", data))
   }
-
 
   const handleGetStartedClick = () => {
     setToggleCreate(!toggleCreate)

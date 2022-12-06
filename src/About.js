@@ -15,7 +15,7 @@ const About = () => {
 
             <div>
                 <hr/>
-                <br /> <Button a href="https://medium.com/@mikahado" target="_blank">Click here to read the blog!</Button> <br />
+
             </div>
             <br />
 

@@ -6,7 +6,6 @@ import Typography from '@mui/material/Typography';
 
 import Creation from './Creation'
 
-
 const Creations = () => {
 
     const [creations, setCreations] = useState([])
@@ -38,6 +37,7 @@ const Creations = () => {
 
     return (
         <div>
+            <br />
             <h2>Past Creations</h2>
             <hr />
             <table className="table table-striped">
@@ -55,9 +55,6 @@ const Creations = () => {
             </table>
             <hr/><br/>
 
-            
-
-            
             <Card sx={{ minWidth: 275 }}>
                 <CardContent>
                     <Typography variant="h5" component="div">
