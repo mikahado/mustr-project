@@ -24,7 +24,7 @@ function Navigation() {
         <Button>
           <NavLink
             to="/"
-            exact
+            end
           >
             Home
           </NavLink>
@@ -33,7 +33,7 @@ function Navigation() {
         <Button>
           <NavLink
             to="/creations"
-            exact
+            end
           >
             Creations
           </NavLink>
@@ -42,7 +42,7 @@ function Navigation() {
         <Button>
           <NavLink
             to="/creations/new"
-            exact
+            end
           >
             New
           </NavLink>
@@ -51,7 +51,7 @@ function Navigation() {
         <Button>
           <NavLink
             to="/about"
-            exact
+            end
           >
             About
           </NavLink>

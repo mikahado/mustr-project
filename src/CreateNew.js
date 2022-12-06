@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import Button from '@mui/material/Button';
 import TehMain from './TehMain'
 
@@ -12,6 +12,7 @@ const CreateNew = () => {
     text: ""
   })
 
+  const navigate = useNavigate();
 
   const [toggleCreate, setToggleCreate] = useState(false)
 
@@ -49,6 +50,7 @@ const CreateNew = () => {
     })
       // .then(resp => resp.json())
       // .then(data => console.log("persisted to backend:", data))
+      navigate('/');
   }
  
   return (

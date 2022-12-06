@@ -17,7 +17,7 @@ const Home = () => {
                 <hr/>
                 <br />
                 <h3>Try Our First Feature </h3>
-                    <NavLink to="/creations/new" exact>
+                    <NavLink to="/creations/new" end>
                         <img src={require("./img/exquisiteHorseLogo.png")} alt="An Exquisite Horse" height="200" />
                     </NavLink>
                     <h3>The Exquisite Horse </h3>

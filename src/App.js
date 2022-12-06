@@ -1,5 +1,5 @@
 import React, { useState, useEffect} from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Switch, CompatRouter } from 'react-router-dom';
 import Home from './Home';
 import Navigation from './Navigation'
 import Creations from './Creations'
@@ -23,17 +23,19 @@ function App() {
   return (
     
   <Router> 
-      <Navigation />    
-
+    
+        <Navigation />  
       <div className="App">
-        <Switch>
-          <Route exact path="/" component={Home}/> 
-          <Route exact path="/creations" render={(props) => <Creations {...props} creations={creations}/>}/>
-          <Route exact path="/creations/new" render={(props) => <CreateNew {...props} creations={creations}/>}/>
-          <Route path="/about" component={About} /> 
-        </Switch>
-      </div>
+        <Routes>
+           
+          <Route exact path="/" element={<Home />} /> 
+          <Route exact path="/creations" element={<Creations creations={creations}/>} />
+          <Route exact path="/creations/new" element={<CreateNew creations={creations}/>} />
+          <Route path="/about" element={<About />} /> 
 
+        </Routes>
+      </div>
+     
   </Router>
   );
 }
