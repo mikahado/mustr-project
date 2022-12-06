@@ -1,56 +1,5 @@
 {
   "creations": [
-    {
-      "title": "gag",
-      "type": "poetry",
-      "authors": "3",
-      "lines": [
-        {
-          "line": "1"
-        },
-        {
-          "line": "2"
-        },
-        {
-          "line": "3"
-        },
-        {
-          "line": "4"
-        },
-        {
-          "line": "5"
-        },
-        {
-          "line": "6"
-        },
-        {
-          "line": "7"
-        }
-      ],
-      "id": 1
-    },
-    {
-      "title": "My First Exquisite Horse",
-      "type": "poetry",
-      "authors": "3",
-      "lines": [
-        {
-          "line": "In the woods there was a donkey"
-        },
-        {
-          "line": "They called the donkey an ass"
-        },
-        {
-          "line": "Are you an ass, asked the Asker"
-        },
-        {
-          "line": "No, said the donkey"
-        },
-        {
-          "line": "I am an exquisite horse."
-        }
-      ],
-      "id": 2
-    }
+   
   ]
 }

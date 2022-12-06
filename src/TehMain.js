@@ -14,7 +14,6 @@ const TehMain = ({addTehPoem, creationTitle, handleSubmit}) => {
 
   const poemList = tehPoem.map(h => <TehPoem key={h.title} poem={h.line} />)
   const game = poemList.slice(-1)
-  console.log(game)
 
   return (
     <div>

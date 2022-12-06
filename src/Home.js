@@ -16,16 +16,12 @@ const Home = () => {
             <div>
                 <hr/>
                 <br />
-                <img src={require("./img/exquisiteHorseLogo.png")} alt="An Exquisite Horse" height="200" />
-                <h3>Try our first feature - The Exquisite Horse. </h3>
-                <Button variant="contained" color="secondary">
-                    <NavLink
-                        to="/creations/new"
-                        exact
-                    >
-                        Begin!
+                <h3>Try Our First Feature </h3>
+                    <NavLink to="/creations/new" exact>
+                        <img src={require("./img/exquisiteHorseLogo.png")} alt="An Exquisite Horse" height="200" />
                     </NavLink>
-                </Button>
+                    <h3>The Exquisite Horse </h3>
+               
         <br /><br />
             </div>
 

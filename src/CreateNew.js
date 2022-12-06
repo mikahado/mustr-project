@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useHistory } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import TehMain from './TehMain'
 
@@ -10,6 +11,7 @@ const CreateNew = () => {
     authors: 0,
     text: ""
   })
+
 
   const [toggleCreate, setToggleCreate] = useState(false)
 
@@ -28,6 +30,7 @@ const CreateNew = () => {
       ...creationForm, line
     })
   }
+
     
   function handleSubmit(e) {
     e.preventDefault() 
@@ -44,10 +47,9 @@ const CreateNew = () => {
       headers: {"Content-Type" : "application/json"},
       body: JSON.stringify(newText)
     })
-      .then(resp => resp.json())
-      .then(data => console.log("persisted to backend:", data))
+      // .then(resp => resp.json())
+      // .then(data => console.log("persisted to backend:", data))
   }
-
  
   return (
 
