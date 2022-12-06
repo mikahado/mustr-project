@@ -29,7 +29,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home}/> 
           <Route exact path="/creations" render={(props) => <Creations {...props} creations={creations}/>}/>
-          <Route exact path="/creations/new" component={Create} creations={creations}/>
+          <Route exact path="/creations/new" render={(props) => <Create {...props} creations={creations}/>}/>
           <Route path="/about" component={About} /> 
         </Switch>
       </div>

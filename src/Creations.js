@@ -8,8 +8,6 @@ import Creation from './Creation'
 
 const Creations = ({creations}) => {
 
-    console.log("do we have our STOOF?", creations)
-
     const [showContent, setShowContent] = useState({
         title: " ",
         authors: " ",
@@ -17,8 +15,6 @@ const Creations = ({creations}) => {
             line: " "
         }],
     })
-
-    
 
     const creationsList = creations.map((c) => 
         <Creation 

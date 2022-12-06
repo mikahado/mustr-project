@@ -1,84 +1,62 @@
 {
   "creations": [
     {
-      "title": "fdaf",
+      "title": "An Exquisite Horse",
       "type": "poetry",
-      "authors": "3",
+      "authors": "4",
       "lines": [
         {
-          "line": "feaf"
+          "line": "1"
         },
         {
-          "line": "feaf"
+          "line": "2"
         },
         {
-          "line": "ageag"
+          "line": "3"
         },
         {
-          "line": "fafafa"
+          "line": "4"
+        },
+        {
+          "line": "5"
+        },
+        {
+          "line": "6"
+        },
+        {
+          "line": "7"
+        },
+        {
+          "line": "8"
         }
       ],
       "id": 1
     },
     {
-      "title": "",
-      "type": "",
-      "authors": 0,
+      "title": "Testy testy",
+      "type": "poetry",
+      "authors": "4",
       "lines": [
         {
-          "line": "Here is my first line"
+          "line": "1"
         },
         {
-          "line": "Here is the second line"
+          "line": "2"
         },
         {
-          "line": "Here is the third line"
+          "line": "3"
         },
         {
-          "line": "Here is the fourth line"
+          "line": "4"
+        },
+        {
+          "line": "5"
+        },
+        {
+          "line": "6"
         }
       ],
       "id": 2
-    },
-    {
-      "title": "whaaa",
-      "type": "poetry",
-      "authors": "3",
-      "lines": [
-        {
-          "line": "aaa"
-        },
-        {
-          "line": "bbb"
-        },
-        {
-          "line": "ccc"
-        },
-        {
-          "line": "ddd"
-        }
-      ],
-      "id": 3
-    },
-    {
-      "title": "",
-      "type": "",
-      "authors": 0,
-      "lines": [
-        {
-          "line": "aaa"
-        },
-        {
-          "line": "bbb"
-        },
-        {
-          "line": "ccc"
-        },
-        {
-          "line": "ddd"
-        }
-      ],
-      "id": 4
     }
   ]
 }

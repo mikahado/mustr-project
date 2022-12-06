@@ -1,3 +1,4 @@
+
 :root {
   background-color: #252523;
   padding-top: 2em;
@@ -21,6 +22,10 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: black;
+}
+
+.Header {
+
 }
 
 .App-link {
