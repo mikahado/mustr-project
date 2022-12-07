@@ -9,7 +9,7 @@ const CreateNew = () => {
     title: "",
     type: "",
     authors: 0,
-    line: ""
+    lines: ""
   })
 
   const navigate = useNavigate();
@@ -48,8 +48,8 @@ const CreateNew = () => {
       headers: {"Content-Type" : "application/json"},
       body: JSON.stringify(newText)
     })
-      // .then(resp => resp.json())
-      // .then(data => console.log("persisted to backend:", data))
+      .then(resp => resp.json())
+      .then(addTehPoem)
       
       navigate('/creations');
       window.location.reload()

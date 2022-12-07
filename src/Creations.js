@@ -1,9 +1,5 @@
 import React, {useState, useEffect} from 'react'
 
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
-
 import Creation from './Creation'
 
 const Creations = ({creations}) => {
@@ -45,28 +41,11 @@ const Creations = ({creations}) => {
                 </tbody>
             </table>
             <hr/><br/>
-
           
                 <h2>{showContent.title}</h2>
-                {showContent.lines.map(l => <p> {l.line} </p>)}
-           
 
-            {/* <Card sx={{ minWidth: 275 }}>
-                <CardContent>
-                    <Typography variant="h5" component="div">
-                        {showContent.title}
-                    </Typography>
-                    <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                        {`${showContent.authors} Collaborators`}
-                    </Typography>
-                    <Typography variant="body1" component="p">
-                        
-                        {showContent.lines.map(l => <p key="{showContent.lines}"> {l.line} </p>)}
-                        
-                    <br />
-                    </Typography>
-                </CardContent>
-            </Card> */}
+                {showContent.lines.map((l, index) => <p key={index}> {l.line} </p>)}
+        
             <br />
         </div>
     )

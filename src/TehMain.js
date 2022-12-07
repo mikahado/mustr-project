@@ -12,7 +12,7 @@ const TehMain = ({addTehPoem, creationTitle, handleSubmit}) => {
     setTehPoem([...tehPoem, newLine])
   }
 
-  const poemList = tehPoem.map(h => <TehPoem key={h.title} poem={h.line} />)
+  const poemList = tehPoem.map(h => <TehPoem key={h.id} poem={h.line} />)
   const game = poemList.slice(-1)
 
   return (
@@ -36,8 +36,8 @@ const TehMain = ({addTehPoem, creationTitle, handleSubmit}) => {
         <br /> <br />
         <Button type="click" variant="outlined" onClick={() => addTehPoem(tehPoem)}> Save Line </Button>
         <Button type="submit" variant="outlined" onClick={handleSubmit} value="Print" > Finish </Button>
-        <br /> <br /> <br /> <br /> <br /> <br />
         
+        <br /> <br /> <br /> <br /> <br /> <br />
     </div>
   )
 }

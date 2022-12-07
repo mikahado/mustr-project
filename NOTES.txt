@@ -1,10 +1,11 @@
  json-server --watch db.json --port 3000   
 
+Hi Madeline, 
 
-Fixed most of the thing we talked about. But I'm having trouble solving this error: 
- Warning: Each child in a list should have a unique "key" prop.
+Here's my repo for the Phase-2 project. 
 
-I understand what it's pointing at, and I've tried various solutions, to no end. 
+Having trouble clearing one error, still. When I create a new line item, can't seem to get POST to auto-assign an ID to my nested objects (which I could use as a unique key prop). So I'm getting this error:
 
-Also, for the regular POST, the auto-generated IDs are appearing at the end of my JSON arrays. Is that normal? I'm use to seeing them at the first index, in our labs. 
+Each child in a list should have a unique "key" prop. Check the render method of `TehMain`.
 
+I know I'm probably just missing something obvious. If you could point me in the right direction, I'd much appreciate it! 

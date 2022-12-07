@@ -2,7 +2,9 @@ import React, {useState} from 'react'
 
 const TehForm = ({addNewLine}) => {
 
-    const [nextLine, setNextLine] = useState([])
+    const [nextLine, setNextLine] = useState({
+        line:""
+    })
 
     const handleChange = (e) => {
         setNextLine({

@@ -1,5 +1,41 @@
 {
   "creations": [
-    
+    {
+      "title": "Test Title",
+      "type": "poetry",
+      "authors": "2",
+      "lines": [
+        {
+          "line": "First line"
+        },
+        {
+          "line": "second line"
+        },
+        {
+          "line": "third line"
+        },
+        {
+          "line": "fourth"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "title": "Test Title 2",
+      "type": "poetry",
+      "authors": "2",
+      "lines": [
+        {
+          "line": "Here is the first line "
+        },
+        {
+          "line": "And now the second"
+        },
+        {
+          "line": "And wow, a third! "
+        }
+      ],
+      "id": 2
+    }
   ]
 }
