@@ -1,7 +1,8 @@
 import React from 'react'
 
 const TehPoem = ({poem}) => {
-    
+  
+
   return (
     <div>
         <>

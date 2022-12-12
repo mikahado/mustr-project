@@ -3,7 +3,9 @@ import { useNavigate } from "react-router-dom";
 import Button from '@mui/material/Button';
 import TehMain from './TehMain'
 
-const CreateNew = () => {
+const CreateNew = ({setCreations, creations}) => {
+
+  console.log(creations)
 
   const [creationForm, setCreationForm] = useState({
     title: "",
@@ -11,8 +13,6 @@ const CreateNew = () => {
     authors: 0,
     lines: ""
   })
-
-  const navigate = useNavigate();
 
   const [toggleCreate, setToggleCreate] = useState(false)
 
@@ -27,12 +27,14 @@ const CreateNew = () => {
   }
 
   const addTehPoem = (line) => {
-    setCreationForm({
-      ...creationForm, line
-    })
-  }
 
-    
+        setCreationForm({
+          ...creationForm, line
+        })
+      }
+
+  const navigate = useNavigate();
+
   function handleSubmit(e) {
     e.preventDefault() 
 
@@ -49,10 +51,9 @@ const CreateNew = () => {
       body: JSON.stringify(newText)
     })
       .then(resp => resp.json())
-      .then(addTehPoem)
-      
+      .then(setCreations([...creations, newText]))
+
       navigate('/creations');
-      window.location.reload()
   }
  
   return (
@@ -71,13 +72,12 @@ const CreateNew = () => {
           <br/><br/>
         <label>Type: </label>
           <br />
-            <select name="type" id="type" onChange={handleChange} value={creationForm.type}>
+            <select name="type" id="type" onChange={handleChange} value={creationForm.type} >
               <option></option>
               <option value="poetry">Exquisite Horse</option>
               <option value="film">Film: Coming Soon</option>
               <option value="commerical">Commerical: Coming Soon</option>
-              <option value="novel">Novel: Coming Soon</option>
-              <option value="poetry">Poem: Coming Soon</option>
+              <option value="novel">Story: Coming Soon</option>
             </select>
           <br/><br/>
         <label># of Collaborators:</label>

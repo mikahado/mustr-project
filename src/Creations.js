@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react'
-
 import Creation from './Creation'
 
 const Creations = ({creations}) => {
@@ -12,13 +11,14 @@ const Creations = ({creations}) => {
         }],
     })
 
+    console.log(creations)
     const creationsList = creations.map((c) => 
-        <Creation 
-            key={c.title}
-            creation={c}
-            setShowContent={setShowContent}
-            />
-        )
+    <Creation 
+        key={c.id}
+        creation={c}
+        setShowContent={setShowContent}
+        /> 
+  ) 
 
     return (
 

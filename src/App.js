@@ -1,12 +1,11 @@
 import React, { useState, useEffect} from 'react'
-import { BrowserRouter as Router, Route, Routes, Switch, CompatRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Home';
 import Navigation from './Navigation'
 import Creations from './Creations'
 import CreateNew from './CreateNew'
 import About from './About'
 import './App.css';
-
 
 function App() {
 
@@ -27,10 +26,9 @@ function App() {
         <Navigation />  
       <div className="App">
         <Routes>
-           
           <Route exact path="/" element={<Home />} /> 
-          <Route exact path="/creations" element={<Creations creations={creations}/>} />
-          <Route exact path="/creations/new" element={<CreateNew creations={creations}/>} />
+          <Route exact path="/creations" element={<Creations creations={creations} />} />
+          <Route exact path="/creations/new" element={<CreateNew creations={creations} setCreations={c => setCreations(c)}/>} />
           <Route path="/about" element={<About />} /> 
 
         </Routes>
