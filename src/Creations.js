@@ -13,7 +13,7 @@ const Creations = ({creations}) => {
 
     const creationsList = creations.map((c) => 
     <Creation 
-        key={c.lines}
+        key={c.title}
         creation={c}
         setShowContent={setShowContent}
         /> 

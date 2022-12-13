@@ -28,7 +28,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} /> 
           <Route exact path="/creations" element={<Creations creations={creations} />} />
-          <Route exact path="/creations/new" element={<CreateNew creations={creations} setCreations={c => setCreations(c)}/>} />
+          <Route exact path="/creations/new" element={<CreateNew creations={creations} setCreations={setCreations}/>} />
           <Route path="/about" element={<About />} /> 
         </Routes>
       </div>
