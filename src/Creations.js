@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import Creation from './Creation'
 
 const Creations = ({creations}) => {
@@ -13,7 +13,7 @@ const Creations = ({creations}) => {
 
     const creationsList = creations.map((c) => 
     <Creation 
-        key={c.id}
+        key={c.lines}
         creation={c}
         setShowContent={setShowContent}
         /> 

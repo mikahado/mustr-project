@@ -1,5 +1,108 @@
 {
   "creations": [
-   
+    {
+      "title": "The Ancient Mortal",
+      "type": "poetry",
+      "authors": "3",
+      "lines": [
+        {
+          "line": "deep breath"
+        },
+        {
+          "line": "in the water of whirls"
+        },
+        {
+          "line": "i felt both my lungs respire"
+        },
+        {
+          "line": "deep end "
+        },
+        {
+          "line": "on the blue send of waves "
+        },
+        {
+          "line": "my fingers appear much older"
+        },
+        {
+          "line": "my skin peels off"
+        },
+        {
+          "line": "a new begins"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "title": "(in parenthesis)",
+      "type": "poetry",
+      "authors": "4",
+      "lines": [
+        {
+          "line": "the unsigned sun shined steadily"
+        },
+        {
+          "line": "on two lone crocodiles in Topolobampo"
+        },
+        {
+          "line": "(who perhaps should no be here)"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "title": "Fierce Intuition",
+      "type": "poetry",
+      "authors": "3",
+      "lines": [
+        {
+          "line": "the bears eyes"
+        },
+        {
+          "line": "bear in"
+        },
+        {
+          "line": "nocence and"
+        },
+        {
+          "line": "pierce you"
+        },
+        {
+          "line": "as you"
+        },
+        {
+          "line": "feign"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "title": "Columns of Air",
+      "type": "poetry",
+      "authors": "2",
+      "lines": [
+        {
+          "line": "gasps mask"
+        },
+        {
+          "line": "the tone of perfection"
+        },
+        {
+          "line": "and remind us that"
+        },
+        {
+          "line": "the finite"
+        },
+        {
+          "line": "is the human dream"
+        },
+        {
+          "line": "of the infinite "
+        },
+        {
+          "line": "universe"
+        }
+      ],
+      "id": 4
+    }
   ]
 }
