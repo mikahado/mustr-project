@@ -44,15 +44,13 @@ Follow the on-screen instructions.
 
 The Exquisite Horse is the first of many features of MUSTR. 
 
->*The Exquisite Corpse* was a classic, collaborative, writing game, invented in the 1920s. 
+>*The Exquisite Corpse* was collaborative, writing method, invented in the 1920s. There are many variations, but the general rule is that each collaborator is unaware of all or some of what previous collaborators had written.
 
-In this app, we call it **The Exquisite Horse** (yes, yes, a donkey).
+In this app, we call our version of the method **The Exquisite Horse** (see: donkey).
 
 ### Rules
 
-General rule: each collaborator is unaware of what the others have written. 
-
-Here, the current author is only aware of what the previous author has written. All lines written beforehand are hidden! 
+The current author may only see the line written immediately before. All lines before that are hidden.
 
 The entries are saved in order, and only revealed after all lines have been saved, individually.
 
