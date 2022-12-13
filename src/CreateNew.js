@@ -5,8 +5,6 @@ import TehMain from './TehMain'
 
 const CreateNew = ({setCreations, creations}) => {
 
-  console.log(creations)
-
   const [creationForm, setCreationForm] = useState({
     title: "",
     type: "",

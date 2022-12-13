@@ -9,3 +9,118 @@ Having trouble clearing one error, still. When I create a new line item, can't s
 Each child in a list should have a unique "key" prop. Check the render method of `TehMain`.
 
 I know I'm probably just missing something obvious. If you could point me in the right direction, I'd much appreciate it! 
+
+
+
+
+README EDIT:
+
+Other possible names. Tromp, Collective Promts for Creative Thinking. Dome. Wing Draft. First Draft. TextBox. Loge. Pharm Draft. ProtoDraft. Draft Ahead. Mustr. Cyphr. Mooch. 
+
+# Mustr, the meaning
+~~~
+MUSTER 
+/ˈməstər/
+
+n. a body of people come together in one place. 
+
+v. muster something (up) to find as much support, courage, etc. as you can
+~~~
+
+"First thought best thought". 
+
+
+
+A turn-based, collaborative app to guide spontaneous, fearless writing.
+
+
+Dome is a writing app that makes the first draft easy, fun, and efficient for collaborative writers. 
+
+Spontaneous, fearless. 
+
+How does it work? First, users choose a type: film, commercial, story, poem. Then they choose a method, a program that guides the form of their writing, but keeps the text box ready to fill. The program is turn-based, so after one user writes their piece, they pass it on to the next writer. The benefit of turn-based (as opposed to synchronous writing, like GoogleDocs) is that it works well for democratic collaboration. No one writer can take control of the whole draft until they have completed it. 
+
+For example, take the classic writing game The Exquisite Corpse. (In this app we call it Exquisite Horse). Played with at least 3 authors, the rules are simple. The first author writes a line, then passes it to the second, who writes a following line in response to the first. But when they pass it to the third author, the first line disappears! They must respond ONLY to the previous line. And so it goes on like this, with each turnz the author can only see the line written before them, and not the whole text. This 'blind spot' functions as a catalyst for indeterminism and risk, two elements essential for creative writing. The more authors included, the greater the blind spot. It is best suited for 3-4 authors. 
+
+Dome makes Dome is an app designed for collaborative writers of all kinds to complete projects. It provides the various structure for different writing styles, so you amd your friends domt have to. 
+
+Writing features are turn-based. After you've finished writing your piece, it is saved
+
+
+
+
+
+This line has no extra magic. 
+
+# Big Head 1 w/ Line >:D
+
+## heading 2 no line but good stuff :D
+
+### heading 3 probaby never worth it >:(
+
+
+_must i emphasiseseseses everything!_
+
+**all I wanna do is embolden you**
+
+~~do not tell anyone but i want you to read this ok?~~
+
+[do not click here i dare you not to click here i dare you but do not click here not i dare click do you not to click](https://www.google.com)
+
+![isDonkey](https://i.ytimg.com/vi/tc3eApKVaaw/maxresdefault.jpg)
+
+**Donkey** says `hey baby` when you come `in` to your `house` especially if you have `backticks` to offer.
+
+```javascript
+var name = "hi i am totally a code  and that is all so let me see you see me in console log now."
+console.log(name + 'good girl')
+```
+
+|table people|table toes|table faces|
+| ---- | ---- | ---|
+| Jim Jhock | 22| gogo _luckery_|
+
+>keep smiling and work harder kids.
+
+1. thingy 1
+2. thingy 2
+3. thingy 3
+
+---
+
+```
+And with triple backticks I am just a block for cool side-stuff
+```
+
+~~~
+With wigglies you can do the same shit. It just is what it is ok bitch? 
+~~~
+
+# Time For a List
+
+* list time
+* oh yeah
+* totally unordered
+* here is a thing
+* there is a thing
+* as a list that is 
+    * even with indents a list within
+    * holy cow how cool
+        * and yeppp
+            * yawp again
+                * ye same old ok i'm out
+
+
+`wrapped in backticks: <p> this is a paragraph inline code block </p>`
+
+`wrapped in backticks makes it yellowy for banana reasons`
+
+
+|name|email|
+|---|---|
+|john doe| john.doe@gmail.com
+|jane doe| jane.doe@gmail.com|
+|god|god@gmail.com
+|satan|satanus@gmail.com
+
+

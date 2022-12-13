@@ -11,7 +11,6 @@ const Creations = ({creations}) => {
         }],
     })
 
-    console.log(creations)
     const creationsList = creations.map((c) => 
     <Creation 
         key={c.id}
