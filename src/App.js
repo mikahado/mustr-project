@@ -30,7 +30,6 @@ function App() {
           <Route exact path="/creations" element={<Creations creations={creations} />} />
           <Route exact path="/creations/new" element={<CreateNew creations={creations} setCreations={c => setCreations(c)}/>} />
           <Route path="/about" element={<About />} /> 
-
         </Routes>
       </div>
      
