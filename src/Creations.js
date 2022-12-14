@@ -11,12 +11,13 @@ const Creations = ({creations}) => {
         }],
     })
 
-    const creationsList = creations.map((c) => 
-    <Creation 
-        key={c.title}
-        creation={c}
-        setShowContent={setShowContent}
-        /> 
+
+  const creationsList = creations.map((c) => 
+  <Creation 
+      key={c.title}
+      creation={c}
+      setShowContent={setShowContent}
+      /> 
   ) 
 
     return (

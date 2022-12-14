@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Button from '@mui/material/Button';
 import TehMain from './TehMain'
 
-const CreateNew = ({setCreations, creations}) => {
+const CreateNew = ({handleNewCreation}) => {
 
   const [creationForm, setCreationForm] = useState({
     title: "",
@@ -49,7 +49,7 @@ const CreateNew = ({setCreations, creations}) => {
       body: JSON.stringify(newText)
     })
       .then(resp => resp.json())
-      .then(setCreations([...creations, newText]))
+      .then(handleNewCreation(newText))
 
       navigate('/creations');
   }

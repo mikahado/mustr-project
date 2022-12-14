@@ -4,6 +4,7 @@ import Home from './Home';
 import Navigation from './Navigation'
 import Creations from './Creations'
 import CreateNew from './CreateNew'
+import Creation from './Creation'
 import About from './About'
 import './App.css';
 
@@ -18,7 +19,11 @@ function App() {
         setCreations(data)
     })
 }, []) 
-  
+
+  const handleNewCreation = (e) => {
+    setCreations([...creations, e])
+  }
+
   return (
     
   <Router> 
@@ -28,7 +33,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} /> 
           <Route exact path="/creations" element={<Creations creations={creations} />} />
-          <Route exact path="/creations/new" element={<CreateNew creations={creations} setCreations={setCreations}/>} />
+          <Route exact path="/creations/new" element={<CreateNew handleNewCreation={handleNewCreation} />} />
           <Route path="/about" element={<About />} /> 
         </Routes>
       </div>
