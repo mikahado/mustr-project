@@ -21,14 +21,14 @@ import Button from '@mui/material/Button';
     <div>
       <br />
       <hr />
+
       <img src={require("./img/exquisiteHorseLogo.png")} alt="A Very Exquisite Horse" height="100" />
       <p><strong>How to play <em>The Exquisite Horse</em></strong></p>
       <p>1. Write a line in the text box, then Push Enter.</p>
       <p>2. Click SEND to pass the horse to the next author.</p>
       <p>3. Repeat. </p>
-     
+      
       <hr />
-
         <br />
         <h1>{creationTitle}</h1>
         <em className="counter">{counter}</em>

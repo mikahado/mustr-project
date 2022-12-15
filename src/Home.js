@@ -1,10 +1,9 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
-import Button from '@mui/material/Button';
 
 const Home = () => {
-    return (
 
+    return (
         <div className="App">
             <br/>
             <h1>MUSTR</h1>

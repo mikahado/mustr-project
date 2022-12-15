@@ -6,12 +6,10 @@ const About = () => {
         <div className="App">
             <br/>
             <h1>ABOUT MUSTR</h1>
-            <h2>the app for collaborative writers</h2>
-                  
+            <h2>the app for collaborative writers</h2>   
         </div>
         
         <div>
-
             <h2 id="mustr">MUSTR</h2>
             <p>Mustr is a turn-based, collaborative app for spontaneous, fearless writing. From film to commercial, stories to speeches, Mustr provides guided prompts (forms, patterns, and gmeas) for writers to collaborate, and let their creativity flourish together.</p>
             <h2 id="how-to-install">How to Install</h2>

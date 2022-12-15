@@ -1,10 +1,9 @@
-import React, { useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Home';
 import Navigation from './Navigation'
 import Creations from './Creations'
 import CreateNew from './CreateNew'
-import Creation from './Creation'
 import About from './About'
 import './App.css';
 
@@ -20,8 +19,8 @@ function App() {
     })
 }, []) 
 
-  const handleNewCreation = (e) => {
-    setCreations([...creations, e])
+  const handleNewCreation = (newCreation) => {
+    setCreations([...creations, newCreation])
   }
 
   return (

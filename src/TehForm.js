@@ -22,11 +22,9 @@ const TehForm = ({addNewLine}) => {
 
   return (
     <form onSubmit={handleSubmit}>
-
         <br />
         <input type="text" name="line" onChange={handleChange} value={nextLine.line} placeholder="write then push enter"/>
         <br /><br />
-       
     </form>
   )
 }
