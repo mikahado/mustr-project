@@ -11,15 +11,8 @@ const About = () => {
         
         <div>
             <h2 id="mustr">MUSTR</h2>
-            <p>Mustr is a turn-based, collaborative app for spontaneous, fearless writing. From film to commercial, stories to speeches, Mustr provides guided prompts (forms, patterns, and gmeas) for writers to collaborate, and let their creativity flourish together.</p>
-            <h2 id="how-to-install">How to Install</h2>
-            <p>Fork and clone from GitHub:</p>
-            <p>https://github.com/mikahado/phase-2-project</p>
-            <p>Run a json server:</p>
-            <pre><code>json-server --watch db.json --port 3000  </code></pre>
-            <p>Run the scripts, to view in browser:</p>
-            <pre><code>npm start</code></pre>
-            <p>Follow the on-screen instructions.</p>
+            <p>Mustr is a turn-based, collaborative app for spontaneous, fearless writing. From film to commercial, stories to speeches, Mustr provides guided methods for writers to collaborate, and let their creativity flourish together.</p>
+            
             <h2 id="instructions">Instructions</h2>
             <ol type="1">
            
