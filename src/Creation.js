@@ -9,7 +9,7 @@ const {title, type, authors} = creation
 const handleClick = () => {
   setShowContent(creation)
 }
- 
+
   return (
     <>
       <tr>

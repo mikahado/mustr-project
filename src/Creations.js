@@ -3,6 +3,8 @@ import Creation from './Creation'
 
 const Creations = ({creations}) => {
 
+    const [search, setSearch] = useState("")
+
     const [showContent, setShowContent] = useState({
         title: " ",
         authors: " ",
@@ -11,7 +13,13 @@ const Creations = ({creations}) => {
         }],
     })
 
-    const creationsList = creations.map((c) => 
+    const handleSearchChange = (e) => {
+        setSearch(e.target.value)
+    }
+
+    const filterByTitle = creations.filter(c => c.title.toLowerCase().includes(search.toLowerCase()))
+
+    const creationsList = filterByTitle.map((c) => 
     <Creation 
         key={c.title}
         creation={c}
@@ -26,6 +34,7 @@ const Creations = ({creations}) => {
             <h2>Past Creations</h2>
             <br />
             <hr />
+            <input type="text" placeholder="search by title" onChange={handleSearchChange} />
             <table className="table table-striped">
                 <thead>
                     <tr>

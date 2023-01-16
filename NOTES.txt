@@ -3,3 +3,16 @@
 
 
 
+create a search box that helps us find a poem through its title 
+
+1. create the search UI
+2. place state, which will store input from search bar, text box
+3. create an event listener, onChange, that sets state 
+4. filter over creations for titles with exact matches to state
+5. Then show on Dom via creationsCards
+
+notes:
+
+focus on derived State
+
+codewars for js and ruby
